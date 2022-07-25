@@ -10,23 +10,23 @@ public class No_1484 {
 		long s= 1;
 		long e =2;
 		
-		boolean flag = false;
+		boolean isSquare = false;
 		while(e<1000000) {
-			long ps = s*s;
-			long pe = e*e;
-			if(pe-ps == n) {
+			long ds = s*s;
+			long de = e*e;
+			if(de-ds == n) {
 				System.out.println(e);
-				flag = true;
+				isSquare = true;
 			}
 			
-			if(pe-ps >n){
+			if(de-ds >n){
 				s++;
 			}else {
 				e++;
 			}
 		}
 		
-		if(!flag) {
+		if(!isSquare) {
 			System.out.println(-1);
 		}
 	}

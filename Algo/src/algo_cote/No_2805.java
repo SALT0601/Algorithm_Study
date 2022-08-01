@@ -30,7 +30,7 @@ public class No_2805 {
 				e=mid-1;
 			}
 		}
-		System.out.println(s);
+		System.out.println(res);
 	}
 	
 	 static boolean check(int x) {
@@ -42,6 +42,6 @@ public class No_2805 {
 			}
 			
 		}
-		return total > m;
+		return total >= m;
 	}
 }

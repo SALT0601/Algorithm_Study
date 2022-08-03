@@ -27,12 +27,12 @@ public class No_1_4단어뒤집기 {
 			//int s=0, e=x.length()-1;
 			//whlie(s<e){
 			//char tmp =srr[s];
-			//srr[s]=s[e];
-			//s[e]=tmp;
+			//srr[s]=srr[e];
+			//srr[e]=tmp;
 			//s++;
 			//e--;
 			//	}
-			//String tmp = String.valueOf(s); //스태틱으로 선언된 클래스 메서드로 스트링으로 형변환
+			//String tmp = String.valueOf(srr); //스태틱으로 선언된 클래스 메서드로 스트링으로 형변환
 			//ans.add(tmp);
 			//}
 			

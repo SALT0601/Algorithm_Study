@@ -4,25 +4,25 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class No_1_2´ë¼Ò¹®ÀÚº¯È¯ {
+public class No_1_2ëŒ€ì†Œë¬¸ìžë³€í™˜ {
 	
 	public static String solution(String str) {
 	
 	 String ans = "";
-		//Çâ»óµÈ for¹® 
-		for(char x : str.toCharArray()) //toCharArray()°¡ ¹®ÀÚ¿­ÀÇ char·Î ºÐ¸®ÇØ ¹®ÀÚ¹è¿­À» »õ·Î »ý¼º
+		//í–¥ìƒëœ forë¬¸ 
+		for(char x : str.toCharArray()) //toCharArray()ê°€ ë¬¸ìžì—´ì˜ charë¡œ ë¶„ë¦¬í•´ ë¬¸ìžë°°ì—´ì„ ìƒˆë¡œ ìƒì„±
 		{
 			if(Character.isLowerCase(x)) ans += Character.toUpperCase(x);
-			//Character.isLowerCase(x)°¡ ¼Ò¹®ÀÚÀÎÁö È®ÀÎÇÏ´Â °Í
+			//Character.isLowerCase(x)ê°€ ì†Œë¬¸ìžì¸ì§€ í™•ì¸í•˜ëŠ” ê²ƒ
 			else ans += Character.toLowerCase(x);
 		}
 		return ans;
-		//¾Æ½ºÅ°·Î Ç®±â
+		//ì•„ìŠ¤í‚¤ë¡œ í’€ê¸°
 		/*
-		 *for(char x : str.toCharArray()) //toCharArray()°¡ ¹®ÀÚ¿­ÀÇ char·Î ºÐ¸®ÇØ ¹®ÀÚ¹è¿­À» »õ·Î »ý¼º
+		 *for(char x : str.toCharArray()) //toCharArray()ê°€ ë¬¸ìžì—´ì˜ charë¡œ ë¶„ë¦¬í•´ ë¬¸ìžë°°ì—´ì„ ìƒˆë¡œ ìƒì„±
 		{
 			if(x>=65&& x<=90) ans += (char)(x+32);
-			//Character.isLowerCase(x)°¡ ¼Ò¹®ÀÚÀÎÁö È®ÀÎÇÏ´Â °Í
+			//Character.isLowerCase(x)ê°€ ì†Œë¬¸ìžì¸ì§€ í™•ì¸í•˜ëŠ” ê²ƒ
 			else ans += (char)(x-32);
 		}
 		 * */

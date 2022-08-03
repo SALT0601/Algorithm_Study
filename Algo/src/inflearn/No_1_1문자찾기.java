@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class No_1_1¹®ÀÚÃ£±â {
+public class No_1_1ë¬¸ìì°¾ê¸° {
 	public static int solution(String str, char t) {
 		int ans=0;
 		str = str.toUpperCase();
@@ -14,8 +14,8 @@ public class No_1_1¹®ÀÚÃ£±â {
 				ans++;
 			}
 		}
-		//Çâ»óµÈ for¹® 
-		//for(char x : str.toCharArray()) //toCharArray()°¡ ¹®ÀÚ¿­ÀÇ char·Î ºĞ¸®ÇØ ¹®ÀÚ¹è¿­À» »õ·Î »ı¼º
+		//í–¥ìƒëœ forë¬¸ 
+		//for(char x : str.toCharArray()) //toCharArray()ê°€ ë¬¸ìì—´ì˜ charë¡œ ë¶„ë¦¬í•´ ë¬¸ìë°°ì—´ì„ ìƒˆë¡œ ìƒì„±
 		//{
 		//	if(x==t) ans++;
 		//}

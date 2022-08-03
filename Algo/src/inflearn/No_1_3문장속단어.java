@@ -4,37 +4,47 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class No_1_3¹®Àå¼Ó´Ü¾î {
-	
-	public static String solution(String str) {
-	
-	 String ans = "";
-		//Çâ»óµÈ for¹® 
-		for(char x : str.toCharArray()) //toCharArray()°¡ ¹®ÀÚ¿­ÀÇ char·Î ºĞ¸®ÇØ ¹®ÀÚ¹è¿­À» »õ·Î »ı¼º
-		{
-			if(Character.isLowerCase(x)) ans += Character.toUpperCase(x);
-			//Character.isLowerCase(x)°¡ ¼Ò¹®ÀÚÀÎÁö È®ÀÎÇÏ´Â °Í
-			else ans += Character.toLowerCase(x);
-		}
-		return ans;
-		//¾Æ½ºÅ°·Î Ç®±â
-		/*
-		 *for(char x : str.toCharArray()) //toCharArray()°¡ ¹®ÀÚ¿­ÀÇ char·Î ºĞ¸®ÇØ ¹®ÀÚ¹è¿­À» »õ·Î »ı¼º
-		{
-			if(x>=65&& x<=90) ans += (char)(x+32);
-			//Character.isLowerCase(x)°¡ ¼Ò¹®ÀÚÀÎÁö È®ÀÎÇÏ´Â °Í
-			else ans += (char)(x-32);
-		}
-		 * */
-	}
+public class No_1_3ë¬¸ì¥ì†ë‹¨ì–´ {
+	/*í•´ì„¤ì½”ë“œ
+	 * split ë°©ë²•
+	 * public static String solution(String str) {
+	 * 
+	 * String ans = ""; int m = Integer.MIN_VALUE; //ìµœëŒ€ê°’ìœ¼ë¡œ ê°±ì‹ í•´ì•¼í•˜ë‹ˆ ì²˜ìŒì—” ê°€ì¥ ì‘ì€ê°’ìœ¼ë¡œ ì´ˆê¸°í™”
+	 * String[] s = str.split(" "); for(String x:s) { int len = x.length();
+	 * if(len>m) { m = len; ans =x; }
+	 * 
+	 * } return ans; }
+	 * 
+	 * indexOf ë°©ë²• -> ë³µì¡...
+	 * * public static String solution(String str) {
+	 * 
+	 * String ans = ""; int m = Integer.MIN_VALUE, pos;
+	 while((pos=str.indexOf(' ')) != -1){	 	
+	 	String tmp = str.substring(0, pox);
+	 	int len = tmp.length();
+	 	if(len>m) { m = len; ans =tmp; }
+	 * str=str.substring(pos+1);
+	 * } 
+	 * if(str.length()>m) ans=str;//ë§ˆì§€ë§‰ ë‹¨ì–´ëŠ” ê³µë°±ì´ ì—†ì–´ whileë¬¸ì—ì„œ ì²˜ë¦¬ê°€ ì•ˆë˜ì–´ ë”°ë¡œ ì²˜ë¦¬
+	 * return ans; }
+	 */
 	public static void main(String[] args) throws IOException {
+		
+		//í•´ì„¤ì½”ë“œ
+		//String str = br.readLine(); 
+		//System.out.println(solution(str));
+		
+		//ë‚´ì½”ë“œ
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String max = "";
+		String[] arr = br.readLine().split(" ");
+		for(int i=0; i<arr.length;i++) {
+			if(max.length() < arr[i].length()) {
+				max = arr[i];
+			}
+		}		
+		System.out.println(max);
 		
-		String str = br.readLine();
-		System.out.print(solution(str));
-		
-		
-
 	}
 
 }

@@ -1,5 +1,5 @@
-package algo_cote;
 
+package algo_cote;
 import java.util.*;
 import java.io.*;
 

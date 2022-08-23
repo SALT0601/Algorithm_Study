@@ -21,6 +21,15 @@ public class No_2_4피보나치수열 {
 			ans += arr[i+2] + " ";
 		}
 			return ans;	
+			//해설코드2 - 배열없이 돌리기
+			//int a=1, b=1, c;
+			//System.out.println(a+ " " + b + " ");
+			//for(int i=2; i<n;i++) {
+			//	c=a+b;
+			//	System.out.println(c+ " ");
+			//	a=b;
+			//	b=c;
+			//}
 
 	}
 	public static void main(String[] args) throws IOException {

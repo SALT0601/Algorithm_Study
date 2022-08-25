@@ -20,25 +20,27 @@ public class No_3673 {
             st = new StringTokenizer(br.readLine());
             for(int j =0; j<n; j++) {
             	arr[j]= Integer.parseInt(st.nextToken());
-            }
-
-      
-        
-        int s=0, e=1, cnt=0, ans=0;
-                   while(e<n-1){
-          ans += arr[s] + arr[e];
-           if(ans % d != 0){
-               e++;
-           }else{
-               s++;
-               e = s+1;
-               cnt++;
-               
-           }
-       }
-         System.out.println(ans);
+            }     
+        int cnt=0;
+        for(int j=0; j<n;j++) {
+        	  int ans = arr[j];
+        	  int e=j;
+            while(e<n){  
+          	  if(j==e) {
+          		  ans = arr[j]; 
+          	  }else {
+          		  ans += arr[e];		
+          	  } 
+             if(ans % d == 0){
+                 e++;
+                 cnt++;  
+             }else{
+            	 e++;         
+             }
         }
-
- 
+     
+       }
+         System.out.println(cnt);
+        }
     }
 }

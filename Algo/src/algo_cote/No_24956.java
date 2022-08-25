@@ -16,12 +16,14 @@ public class No_24956 {
         char[] str = str0.toCharArray();
         long ans;
         int MOD = 1000000007;
-        
         for(int i=1; i<=n; i++){
-            prefix[i] = prefix[i-1] + (Character.compare(str[i], 'W'));
+        	if(str[i]== 'W')  prefix[i] = prefix[i-1] + 1;
+        	else  prefix[i] = prefix[i-1] +0;
+           
         }
         for(int i=n; i>=1;i--){
-            suffix[i] = suffix[i+1] + (Character.compare(str[i], 'E'));
+        	if(str[i]== 'E')  suffix[i] = suffix[i+1] + 1;
+        	else suffix[i] = suffix[i+1] + 0 ;
         }
         
         two[0]=1;
@@ -30,8 +32,8 @@ public class No_24956 {
         }
         ans = 0;
           for(int i=1; i<=n;i++){
-            if(Character.compare(str[i], 'H')==0) ans += prefix[i] * (two[(int) suffix[i]] - suffix[i] - 1);
-              ans %= MOD;
+            if(str[i]== 'H') ans += prefix[i] * (two[(int) suffix[i]] - suffix[i] - 1);
+            else ans %= MOD;
         }
         
         System.out.println(ans);

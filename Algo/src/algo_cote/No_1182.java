@@ -5,7 +5,7 @@ import java.util.*;
 
 
 public class No_1182 {
-	//부분수열 구하기 - 연속하지 않아도 됨
+	//부분수열 구하기 - 연속하지 않아도 됨 -> 백트래킹 네번째 방법 이용한것
     static int n;
     static int s;
     static int[] arr;

@@ -7,7 +7,7 @@ import java.util.*;
 public class No_2580 {
 	//2차원 백트래킹
     static int[][] arr = new int[9][9];
-    static TreeMap<int, int> = new TreeMap<>(;)
+  
  
     public static void main(String[] args) throws IOException {
     	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -24,7 +24,7 @@ public class No_2580 {
     	}
  
     	recur(0);
-    	System.out.println(max);
+    
  
     	
     }

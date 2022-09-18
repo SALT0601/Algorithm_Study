@@ -31,7 +31,6 @@ public class No_1417 {
 		System.out.println(cnt);
 		}
 		
-	
 	}
 
 }
